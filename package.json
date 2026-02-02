@@ -1,0 +1,12 @@
+{
+  "name": "notehub-system",
+  "version": "1.0.0",
+  "description": "NoteHub System with Tailwind CSS",
+  "main": "index.php",
+  "scripts": {
+    "build": "npx tailwindcss -i ./assets/css/src/input.css -o ./assets/css/dist/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

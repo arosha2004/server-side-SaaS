@@ -1,0 +1,16 @@
+# NoteHub System - Essential Security Configuration
+
+# Prevent directory browsing
+Options -Indexes
+
+# Protect hidden files (like .htaccess itself)
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Protect config and log files
+<FilesMatch "\.(ini|log|conf|sql)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
